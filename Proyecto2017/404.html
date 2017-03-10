@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ERROR 404</title>
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,400,300);
+  			@import 'css/estilos.css';
+		</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!-- Usando un NAVBAR con hover según por donde vaya el user -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Inicio</a>
+	    </div>
+	    <div>
+	      <div class="collapse navbar-collapse" id="myNavbar">
+	        <ul class="nav navbar-nav">
+	          <li><a href="noticias.html">Noticias</a></li>
+	          <li class="dropdown">
+	          	<a class="dropdown-toggle" data-toggle="dropdown" href="noticias.html">El Instituto<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#section41">Bachillerato</a></li>
+	              <li><a href="#section42">Formación Profesional</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="actividades.html">Actividades</a></li>
+	          <li><a href="contacta.html">Contacta</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- Jumbotrón -->
+	<div class="page-header">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>UUUUPS...</h1>
+				<p>Se ve que por aquí no hay nada aún</p>
+				<p>Siempre puedes entretenerte con la serpiente o volver a <a href="index.html">inicio</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Juego de la serpiente -->
+	<div class="serpiente">
+		<script src="js/java.js"></script>
+		<canvas id="canvas" width="450" height="450"></canvas>
+	</div>
+
+	<!-- Jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</body>

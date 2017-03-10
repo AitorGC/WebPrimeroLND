@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Actividades</title>
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,400,300);
+  			@import 'css/estilos.css';
+		</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!-- Usando un NAVBAR con hover según por donde vaya el user -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Inicio</a>
+	    </div>
+	    <div>
+	      <div class="collapse navbar-collapse" id="myNavbar">
+	        <ul class="nav navbar-nav">
+	          <li><a href="noticias.html">Noticias</a></li>
+	          <li class="dropdown">
+	          	<a class="dropdown-toggle" data-toggle="dropdown" href="noticias.html">El Instituto<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#section41">Bachillerato</a></li>
+	              <li><a href="#section42">Formación Profesional</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="actividades.html">Actividades</a></li>
+	          <li><a href="contacta.html">Contacta</a></li>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	        	<li><a href="inicioSesion.html">Intranet</a></li>
+			</ul>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- Jumbotrón -->
+	<div class="page-header">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Actividades</h1>
+				<p>Listado de actividades que se celebramos</p>
+				<p>Curso Escolar 2016/17</p>
+				<p>IES El Rincón</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tabla de actividades -->
+	<table class="container table table-bordered">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Lunes</th>
+				<th>Martes</th>
+				<th>Miércoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>16:00 ~ 17:00</td>
+				<td>Zumba</td>
+				<td>Karate</td>
+				<td>Fútsal</td>
+				<td>Ofimática básica</td>
+				<td>Zumba</td>
+			</tr>
+			<tr>
+				<td>17:00 ~ 18:00</td>
+				<td>Matemáticas</td>
+				<td>Zumba</td>
+				<td>Gymkhana</td>
+				<td>Voleibol</td>
+				<td>Inglés</td>
+			</tr>
+			<tr>
+				<td>18:00 ~ 19:00</td>
+				<td>Ofimática básica</td>
+				<td>Programación</td>
+				<td>Karate</td>
+				<td>Lengua</td>
+				<td>Fútsal</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- GALERÍA DE IMÁGENES -->
+	<h2>Galería de imágenes de actividades</h2>
+
+	<div class="row">
+  		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal01">
+      			<a href="#Modal01">
+        			<img src="img/karate.jpg" alt="karate" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Para pegar patadas</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal01" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/karate.jpg" alt="karate" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+  		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal02">
+      			<a href="#Modal02">
+        			<img src="img/zumba.jpg" alt="zumba" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Para quemar grasas</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal02" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/zumba.jpg" alt="zumba" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+  		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal03">
+      			<a href="#Modal03">
+        			<img src="img/ofimatica.jpg" alt="ofimatica" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Ofimática Básica</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal03" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/ofimatica.jpg" alt="ofimatica" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal04">
+      			<a href="#Modal04">
+        			<img src="img/matematicas.jpg" alt="matematicas" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Para aprender álgebra</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal04" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/matematicas.jpg" alt="matematicas" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal05">
+      			<a href="#Modal05">
+        			<img src="img/voleibol.jpg" alt="voleibol" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>¡Bloqueo!</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal05" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/voleibol.jpg" alt="voleibol" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal06">
+      			<a href="#Modal06">
+        			<img src="img/programacion.jpg" alt="programacion" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Nuevas tecnologías</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal06" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/programacion.jpg" alt="programacion" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal02">
+      			<a href="#Modal07">
+        			<img src="img/futsal.jpg" alt="futsal" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Para quemar grasas</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal07" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/futsal.jpg" alt="futsal" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal08">
+      			<a href="#Modal08">
+        			<img src="img/ingles.png" alt="ingles" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Aprende una lengua extranjera</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal08" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/ingles.png" alt="ingles" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+    		<div class="thumbnail" data-toggle="modal" data-target="#Modal09">
+      			<a href="#Modal09">
+        			<img src="img/Gymkhana.jpg" alt="Gymkhana" style="width:200px heigth:200px">
+        			<div class="caption">
+          				<p>Diviértete</p>
+        			</div>
+      			</a>
+    		</div>
+  		</div>
+  		<!-- Modal -->
+		<div id="Modal09" class="modal fade" role="dialog">
+	  		<div class="modal-dialog">
+
+	    		<!-- contenido Modal-->
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      			</div>
+	      			<div class="modal-body">
+	        			<img src="img/Gymkhana.jpg" alt="Gymkhana" style="width:100%">
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">volver</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+  	</div>
+
+  	<!-- ACABA LA GALERÍA DE IMÁGENES -->
+
+	<div class="clearfix"></div>
+
+	<div style="padding:6px;">
+  	<p>En el IES El Rincón coordinamos actividades para que el alumnado pueda disfrutar de los beneficios del ejercicio físico y mental.</p>
+	</div>
+</body>

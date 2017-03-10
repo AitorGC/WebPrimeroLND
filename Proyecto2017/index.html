@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IES El Rincón</title>
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,400,300);
+  			@import 'css/estilos.css';
+		</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!-- Usando un NAVBAR con hover según por donde vaya el user -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Inicio</a>
+	    </div>
+	    <div>
+	      <div class="collapse navbar-collapse" id="myNavbar">
+	        <ul class="nav navbar-nav">
+	          <li><a href="noticias.html">Noticias</a></li>
+	          <li class="dropdown">
+	          	<a class="dropdown-toggle" data-toggle="dropdown" href="noticias.html">El Instituto<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#section41">Bachillerato</a></li>
+	              <li><a href="#section42">Formación Profesional</a></li>
+	            </ul>
+	          	</li>
+	          	<li><a href="actividades.html">Actividades</a></li>
+	          	<li><a href="contacta.html">Contacta</a></li>
+	          	<li><a href="404.html">NO TOCAR</a></li>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	        	<li><a href="inicioSesion.html">Intranet</a></li>
+			</ul>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- Jumbotrón -->
+	<div class="page-header">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>IES El Rincón</h1>
+				<p>Curso Escolar 2016/17</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Dos columnas izq grande y der pequeña -->
+	<div class="row">
+		<div class="col-sm-8">
+
+
+			<h2>Horario de Secretaría</h2>
+
+			<!-- Tabla con horario de secretaría -->
+			<div class="table-responsive block-center">
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Lunes</th>
+							<th>Martes</th>
+							<th>Miércoles</th>
+							<th>Jueves</th>
+							<th>Viernes</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9:00 a 12:00</td>
+							<td>9:00 a 12:00</td>
+							<td>9:00 a 12:00</td>
+							<td>9:00 a 12:00 y 17:00 a 18:00</td>
+							<td>9:00 a 12:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div><h2>Calendario Escolar 2016/17</h2>
+				<object data="http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/wp-content/uploads/sites/137/2016/09/Calendario-Escolar-16-17.pdf" type="application/pdf" width=780 height = 600>
+ 					Su navegador no soporta la inserción de PDF, <a href="http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/wp-content/uploads/sites/137/2016/09/Calendario-Escolar-16-17.pdf">cliquee aquí para descargar el archivo.</a>
+				</object>
+			</div>
+		</div>
+		<div class="col-sm-4 block-center">
+
+			<!-- CARRUSEL -->
+			<div id="Carrusel" class="carousel slide" data-ride="carousel">
+				<!-- Indicador de slide -->
+				<ol class="carousel-indicators">
+					<li data-target="#Carrusel" data-slide-to="0" class="active"></li>
+					<li data-target="#Carrusel" data-slide-to="1"></li>
+					<li data-target="#Carrusel" data-slide-to="2"></li>
+					<li data-target="#Carrusel" data-slide-to="3"></li>
+				</ol>
+
+				<!-- Marco para slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/frontis.jpg" alt="IES">
+					</div>
+
+					<div class="item">
+						<img src="img/logo.png" alt="Logo">
+					</div>
+
+					<div class="item">
+						<img src="img/exhibicion.jpg" alt="Luchada">
+					</div>
+
+					<div class="item">
+						<img src="img/canarias.jpg" alt="Día de Canarias">
+					</div>
+				</div>
+				<!-- Controles derecha e izquierda -->
+				<a class="left carousel-control" href="#Carrusel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="right carousel-control" href="#Carrusel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div>
+			<div>
+				<h3>Síguenos en nuestras RRSS</h3>
+				<a type="application/rss+xml" href="RSS.xml">
+					<img src="img/icon_rss.png" alt="RSS">
+				</a>
+			</div>
+		</div>
+	</div>
+</body>

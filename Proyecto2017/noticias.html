@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Noticias</title>
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,400,300);
+  			@import 'css/estilos.css';
+		</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!-- Usando un NAVBAR con hover según por donde vaya el user -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Inicio</a>
+	    </div>
+	    <div>
+	      <div class="collapse navbar-collapse" id="myNavbar">
+	        <ul class="nav navbar-nav">
+	          <li><a href="noticias.html">Noticias</a></li>
+	          <li class="dropdown">
+	          	<a class="dropdown-toggle" data-toggle="dropdown" href="noticias.html">El Instituto<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#section41">Bachillerato</a></li>
+	              <li><a href="#section42">Formación Profesional</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="actividades.html">Actividades</a></li>
+	          <li><a href="contacta.html">Contacta</a></li>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	        	<li><a href="inicioSesion.html">Intranet</a></li>
+			</ul>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- Jumbotrón -->
+	<div class="page-header">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Noticias</h1>
+				<p>Listado de noticias referentes al instituto</p>
+				<p>Curso Escolar 2016/17</p>
+				<p>IES El Rincón</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pestañas para categorizar noticias -->
+	<ul class="nav nav-tabs block-center">
+		<li class="active"><a data-toggle="tab" href="#general">General</a></li>
+		<li><a data-toggle="tab" href="#alumnado">Alumnado</a></li>
+		<li><a data-toggle="tab" href="#profesorado">Profesorado</a></li>
+	</ul>
+
+	<div class="tab-content">
+		<div id="general" class="tab-pane fade in active block-center">
+			<h3>General</h3>
+			<script language="javascript" src="js/rss.js"></script>
+			<script language="javascript">
+				window.onload = function()
+				{
+					ReadRSS('RSS.xml','rssBodyTemplate','rssTitleTemplate');
+				}
+			</script>
+			<div id="rssTitleTemplate">
+				(::Title::)<br/>
+				<a href="http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/feed/"><h1>(::Description::)</h1></a>
+			</div>
+			<div id="rssBodyTemplate">
+				<a href="(::Link::)"><b>(::Title::)</b></a>
+				<b>(::Pubdate::)</b>
+				<br/>
+				<font size="-1">(::Description::)</font>
+				<hr noshade/>
+				<br/>
+			</div>
+		</div>
+		<div id="alumnado" class="tab-pane fade block-center">
+			<h3>Alumnado</h3>
+			<p>Siguiendo el calendario establecido por la Administración, publicamos las actas de constitución de la mesa electoral, votación y escrutinio relativo a la elección de representantes de padres, madres o tutores y  alumnado para el Consejo Escolar del Centro:</p>
+			<a href="http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/wp-content/uploads/sites/137/2016/11/alumnos.pdf" target="_blank" class="btn btn-info" role="button">Acta Elección Alumnos</a>
+		</div>
+		<div id="profesorado" class="tab-pane fade block-center">
+			<h3>Profesorado</h3>
+			<h2>Manuales para el profesorado</h2>
+			<p>Se encuentran a disposición del profesorado del centro los siguientes manuales:</p>
+			<ul>
+				<li>Manual de acogida</li>
+				<li>Manual del Tutor</li>
+				<li>Manual del Jefe de Departamento</li>
+			</ul>
+			<p>en la Zona Compartida/Comun/Convivencia 2015-2016/manuales del profesorado</p>
+		</div>
+	</div>
+
+</body>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+  <channel>
+    <title>Últimas Noticias</title>
+    <link>http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/feed/</link>
+    <description>últimas noticias del portal del IES El Rincón</description>
+
+      <item>
+          <title>Programa Familias “Fortaleciendo lazos en la familia”</title>
+          <link>http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/2017/01/23/programa-familias-fortaleciendo-lazos-en-la-familia/</link>
+          <description>La prevención de las drogodependencias es una tarea que
+            debemos abordar entre todos. En dicha tarea, la implicación de las familias es fundamental.</description>
+          <pubDate>Lun, 30 Ene 2017 21:41:01 GMT</pubDate>
+      </item>
+
+      <item>
+          <title>Visita de Atención a Familias con cita previa</title>
+          <link>http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/2017/01/23/visita-de-atencion-a-familias-con-cita-previa/</link>
+          <description>Les informamos que el próximo jueves 26 de enero a las 18 horas, hay visita de Atención a las Familias con cita previa.
+            Podrán pedir la cita en los teléfonos abajo reseñados antes del miércoles 25 a las 12:00h.</description>
+          <pubDate>Lun, 30 Ene 2017 21:41:01 GMT</pubDate>
+      </item>
+
+      <item>
+          <title>Vacaciones de Navidad</title>
+          <link>http://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/2016/12/22/vacaciones-de-navidad/</link>
+          <description>Recordamos  a los alumnos y familias del IES El Rincón que mañana viernes 23 de diciembre es no lectivo.</description>
+          <pubDate>Lun, 30 Ene 2017 21:41:01 GMT</pubDate>
+      </item>
+  </channel>
+</rss>
